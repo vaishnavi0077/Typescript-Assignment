@@ -46,3 +46,6 @@ src/
 - Display different task notifications
 - Fetch sample tasks with a simulated delay
 - Use TypeScript strict mode for type safety
+- Added "cancelled" to the status type.
+- Created a Transitions type to define allowed status changes.
+- Implemented a generic moveStatus() function that prevents invalid status transitions at compile time

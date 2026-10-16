@@ -25,10 +25,7 @@ export class Repository<T extends { id: number }> {
     return undefined;
   }
 
-  update(
-    id: number,
-    changes: Partial<Omit<T, "id">>
-  ): T | undefined {
+  update( id: number, changes: Partial<Omit<T, "id">>): T | undefined {
     const item = this.getById(id);
 
     if (item === undefined) {
